@@ -42,10 +42,10 @@ git push --force принудительно если конфликты
 *Добавление изменений в последний коммит без создания нового* 
 git commit --amend
 
-*Откатить изменения*
+
 git pull --rebase
 git rebase --continue
-git rebase --skip *отменить изменения*
+git rebase --skip 
 
 рабочая директория -  для написания кода и тд
 индекс (stage) - подготовленные файлы для коммита
@@ -54,3 +54,7 @@ git rebase --skip *отменить изменения*
 untracked -(git add)--> staged -(git commit)->unmodified -> moified
 ![[diagramm2.png]]
 
+`git checkout name` - переключимся на коммит 
+`git checkout -b branch name` - 
+`git stash`- временный комит помогает не пушить не готовую работу
+`git switch branch_name`- переключиться на другую ветку  
