@@ -36,11 +36,13 @@ sudo -i                        *Стать root (если есть права)*
 sudo apt update && sudo apt upgrade -y
 
 *6)Установим простой файрвол*
+?
 sudo apt install ufw -y
 *Разрешим SSH (обязательно ДО включения!)*
 sudo ufw allow 22/tcp
  *Включим файрвол*
 sudo ufw enable
+<!--SR:!2026-03-17,3,254-->
 
 *7)Отключить вход по паролю* 
 sudo nano /etc/ssh/sshd_config
